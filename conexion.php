@@ -6,7 +6,7 @@
       private $dbname = "citas";
       private $conn;
 
-  public function __construct(){
+     public function __construct(){ 
      //crear conexion
       //mysqli
 
@@ -27,7 +27,6 @@
       }
 
     
-
 
 
 

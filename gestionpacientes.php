@@ -16,10 +16,6 @@ $conexion = new Conexion();
 //obtener la conexion
 $conn = $conexion->getConexion();
 
-//var_dump($conn); exit;
-//$conn = new Conexion();
-//$conexion = $conn->getConexion();
-
 
 //consulta sql
 $sql= "INSERT INTO pacientes (PacIdentificacion, PacNombres, PacApellidos, PacFechaNacimiento, PacSexo) VALUES ('$PacIdentificacion','$PacNombres','$PacApellidos','$PacFechaNacimiento','$PacSexo')";

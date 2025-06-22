@@ -7,7 +7,6 @@ body {
     display: flex;
     width: 80%;
     margin: 20px auto;
-    
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
@@ -85,4 +84,132 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.contenedor {
+    display: flex;
+    height: 100vh;
+    border: 2px solid #ffa500;
+}
+
+.menu-lateral {
+    width: 200px;
+    background-color: #ccc;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-lateral .btn {
+    background-color: #66ffff;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.menu-lateral .btn:hover {
+    background-color: #00cccc;
+}
+
+.menu-lateral .activo {
+    background-color: #66ffff;
+}
+
+.menu-lateral .cerrar-sesion {
+    font-style: italic;
+    text-align: center;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+.contenido {
+    flex: 1;
+    background-color: #eee;
+    padding: 30px;
+}
+
+.contenido h1 {
+    text-align: center;
+    color: #000;
+}
+
+.contenido p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+hr {
+    border: 1px solid #999;
+}
+
+.seccion-contenido {
+    margin-top: 20px;
+    
+}
+.contenedor-login {
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #eee;
+    border: 2px solid #ffa500; /* Borde naranja */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: 100%;
+     background-color: #e6f2ff;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #66ffff;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #00cccc;
+}
+
+#mensaje {
+    margin-top: 15px;
+    color: red;
+    font-style: italic;
 }
